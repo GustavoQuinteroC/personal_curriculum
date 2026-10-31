@@ -120,5 +120,21 @@
     revelables.forEach((el) => observador.observe(el));
   }
 
+  /* ---------- Visor de certificados ---------- */
+  const visor = document.getElementById('visorPdf');
+  if (visor) {
+    const marco = visor.querySelector('iframe');
+    const cerrarVisor = () => { visor.close(); marco.src = 'about:blank'; };
+    document.querySelectorAll('.cert-card__pdf').forEach((boton) => {
+      boton.addEventListener('click', () => {
+        marco.src = boton.dataset.pdf;
+        visor.showModal();
+      });
+    });
+    visor.querySelector('.visor-pdf__cerrar').addEventListener('click', cerrarVisor);
+    visor.addEventListener('click', (e) => { if (e.target === visor) cerrarVisor(); });
+    visor.addEventListener('close', () => { marco.src = 'about:blank'; });
+  }
+
   document.getElementById('anio').textContent = new Date().getFullYear();
 })();
