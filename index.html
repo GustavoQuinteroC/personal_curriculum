@@ -653,7 +653,7 @@
     {
       "@type": "ItemList",
       "@id": "https://gustavoquintero.dev/#productos",
-      "name": "Productos de software diseñados y desarrollados por Gustavo Quintero",
+      "name": "Productos de Alkes, empresa fundada por Gustavo Quintero",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -765,10 +765,120 @@
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "herramientas-web",
-      "description": "Validador de CFDI contra XSD en PHP y generadores de QR, contraseñas y gradientes.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/herramientas-web",
+      "name": "acortador",
+      "description": "Acortador de enlaces con QR, estadísticas y API REST. Cuenta las visitas sin guardar la IP de nadie.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/acortador",
       "programmingLanguage": "PHP",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "validador-cfdi",
+      "description": "Valida CFDI 4.0 contra los esquemas del SAT y explica cada error en español. Librería, comando y página web.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/validador-cfdi",
+      "programmingLanguage": "PHP",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "medidor-co2",
+      "description": "Firmware de un medidor de CO₂ con ESP32 y sensor SCD41: semáforo, alarma, pantalla OLED y panel web. Se instala desde el navegador.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/medidor-co2",
+      "programmingLanguage": "C++",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "estado-de-cuenta-a-excel",
+      "description": "Convierte el PDF del estado de cuenta bancario en Excel con Python dentro del navegador. El PDF no sale del equipo.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/estado-de-cuenta-a-excel",
+      "programmingLanguage": "Python",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "mi_cocina",
+      "description": "Recetario familiar PWA: plan semanal, despensa, lista de compras y recetas con IA validadas para que no inventen.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/mi_cocina",
+      "programmingLanguage": "PHP",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "calculadora-iva",
+      "description": "IVA y retenciones de IVA e ISR al centavo, con el nodo de impuestos del CFDI listo para copiar.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/calculadora-iva",
+      "programmingLanguage": "JavaScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "cantidad-con-letra",
+      "description": "Cantidades a letra para facturas y cheques (MIL PESOS 50/100 M.N.). La misma librería en JavaScript, PHP y Python con casos compartidos.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/cantidad-con-letra",
+      "programmingLanguage": "JavaScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "rfc-curp",
+      "description": "Valida RFC y CURP con dígito verificador y explica cada error en español.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/rfc-curp",
+      "programmingLanguage": "TypeScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "qr-por-lotes",
+      "description": "Códigos QR uno por uno o por lotes desde CSV o Excel a PDF, todo en el navegador.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/qr-por-lotes",
+      "programmingLanguage": "JavaScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "generador-contrasenas",
+      "description": "Contraseñas aleatorias, frases en español y contraseñas derivadas con PBKDF2 y Web Crypto.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/generador-contrasenas",
+      "programmingLanguage": "TypeScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "paletas-y-temas",
+      "description": "Paletas por teoría del color en OKLCH con contraste WCAG y exportación a CSS, Tailwind y Bootstrap.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/paletas-y-temas",
+      "programmingLanguage": "TypeScript",
+      "author": {
+        "@id": "https://gustavoquintero.dev/#persona"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "invitacion-boda",
+      "description": "Invitación de boda digital en un solo archivo: cuenta regresiva, mapas, confirmación por código y galería.",
+      "codeRepository": "https://github.com/GustavoQuinteroC/invitacion-boda",
+      "programmingLanguage": "JavaScript",
       "author": {
         "@id": "https://gustavoquintero.dev/#persona"
       }
@@ -799,66 +909,6 @@
       "description": "Pipeline ETL de tipos de cambio en Python con Apache Airflow.",
       "codeRepository": "https://github.com/GustavoQuinteroC/Airflow",
       "programmingLanguage": "Python",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "smartpend_landing_page",
-      "description": "Página pública de SmartPend, sistema de pendientes y proyectos con folio, historial y formularios públicos.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/smartpend_landing_page",
-      "programmingLanguage": "PHP",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "mantis_landing_page",
-      "description": "Página pública de Mantis, software de mantenimiento preventivo y correctivo con checklist y evidencias.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/mantis_landing_page",
-      "programmingLanguage": "PHP",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "geocheck_landing_page",
-      "description": "Página pública de GeoCheck, control de asistencia por ubicación con NIP, geocerca y foto.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/geocheck_landing_page",
-      "programmingLanguage": "PHP",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "syspower_landing_page",
-      "description": "Página pública de SysPower, reinicio físico remoto de equipos críticos desde el navegador.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/syspower_landing_page",
-      "programmingLanguage": "PHP",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "erp_landing_page",
-      "description": "Página pública de Alkes ERP, gestión empresarial con facturación CFDI.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/erp_landing_page",
-      "programmingLanguage": "PHP",
-      "author": {
-        "@id": "https://gustavoquintero.dev/#persona"
-      }
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "alkes_landing_page",
-      "description": "Sitio de Alkes, software y soluciones TI, hecho a mano en HTML y CSS.",
-      "codeRepository": "https://github.com/GustavoQuinteroC/alkes_landing_page",
-      "programmingLanguage": "JavaScript",
       "author": {
         "@id": "https://gustavoquintero.dev/#persona"
       }
@@ -1003,7 +1053,7 @@
       <nav class="menu" id="menu" aria-label="Secciones">
         <a href="#que-hago">Qué hago</a>
         <a href="#trayectoria">Trayectoria</a>
-        <a href="#productos">Productos</a>
+        <a href="#codigo">Proyectos</a>
         <a href="#plataforma">Plataforma</a>
         <a href="#stack">Stack</a>
         <a href="#formacion">Formación</a>
@@ -1039,8 +1089,8 @@
             <a class="boton boton--rey" href="mailto:contacto@gustavoquintero.dev">
               <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Escríbeme
             </a>
-            <a class="boton boton--cristal" href="#productos">
-              Ver productos<i class="ph ph-arrow-down" aria-hidden="true"></i>
+            <a class="boton boton--cristal" href="#codigo">
+              Ver proyectos<i class="ph ph-arrow-down" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -1241,127 +1291,90 @@
       </div>
     </section>
 
-    <!-- ============================== PRODUCTOS ============================== -->
-    <section class="seccion" id="productos" aria-labelledby="titulo-productos">
+    <!-- ============================== PROYECTOS Y CÓDIGO ABIERTO ============================== -->
+    <section class="seccion" id="codigo" aria-labelledby="titulo-codigo">
       <div class="ancho">
         <div class="encabezado revelar">
-          <h2 id="titulo-productos">Cinco productos, diseñados y operados por mí</h2>
-          <p>Todos son de <a href="https://alkes.mx" rel="noopener" target="_blank">Alkes</a> y comparten el mismo núcleo. Cada uno tiene su página, su demo y su historial de versiones.</p>
+          <h2 id="titulo-codigo">Proyectos y código abierto</h2>
+          <p>Herramientas, librerías y firmware que hice y publiqué con su código, pruebas y GitHub Actions. Casi todas se pueden usar ahora mismo en <a href="https://proyectos.gustavoquintero.dev" rel="noopener" target="_blank">proyectos.gustavoquintero.dev</a>.</p>
         </div>
+        <ul class="repos">
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/crowdsec-coolify-skill" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>crowdsec-coolify-skill</strong>
+            <span>Skill abierta de Claude Code que instala CrowdSec en servidores Coolify con Traefik: bloqueo en proxy y firewall, listas públicas de IPs y verificación por fases.</span>
+            <em>Bash · Docker · Traefik</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/acortador" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>acortador</strong>
+            <span>Acortador de enlaces con QR, estadísticas y API REST. Cuenta las visitas sin guardar la IP de nadie.</span>
+            <em>Laravel · MariaDB · Redis</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/validador-cfdi" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>validador-cfdi</strong>
+            <span>Valida CFDI 4.0 contra los esquemas del SAT y explica cada error en español. Librería, comando y página web.</span>
+            <em>PHP · XSD</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/medidor-co2" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>medidor-co2</strong>
+            <span>Firmware de un medidor de CO₂ con ESP32 y sensor SCD41: semáforo, alarma, pantalla OLED y panel web. Se instala desde el navegador.</span>
+            <em>C++ · PlatformIO · ESP32</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/estado-de-cuenta-a-excel" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>estado-de-cuenta-a-excel</strong>
+            <span>Convierte el PDF del estado de cuenta bancario en Excel con Python dentro del navegador. El PDF no sale del equipo.</span>
+            <em>Python · Pyodide</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/mi_cocina" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>mi_cocina</strong>
+            <span>Recetario familiar PWA: plan semanal, despensa, lista de compras y recetas con IA validadas para que no inventen.</span>
+            <em>PHP · PWA · OpenAI</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/calculadora-iva" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>calculadora-iva</strong>
+            <span>IVA y retenciones de IVA e ISR al centavo, con el nodo de impuestos del CFDI listo para copiar.</span>
+            <em>JavaScript · BigInt</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/cantidad-con-letra" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>cantidad-con-letra</strong>
+            <span>Cantidades a letra para facturas y cheques (MIL PESOS 50/100 M.N.). La misma librería en JavaScript, PHP y Python con casos compartidos.</span>
+            <em>JavaScript · PHP · Python</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/rfc-curp" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>rfc-curp</strong>
+            <span>Valida RFC y CURP con dígito verificador y explica cada error en español.</span>
+            <em>TypeScript</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/qr-por-lotes" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>qr-por-lotes</strong>
+            <span>Códigos QR uno por uno o por lotes desde CSV o Excel a PDF, todo en el navegador.</span>
+            <em>JavaScript</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/generador-contrasenas" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>generador-contrasenas</strong>
+            <span>Contraseñas aleatorias, frases en español y contraseñas derivadas con PBKDF2 y Web Crypto.</span>
+            <em>TypeScript · Web Crypto</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/paletas-y-temas" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>paletas-y-temas</strong>
+            <span>Paletas por teoría del color en OKLCH con contraste WCAG y exportación a CSS, Tailwind y Bootstrap.</span>
+            <em>TypeScript · OKLCH</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/invitacion-boda" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>invitacion-boda</strong>
+            <span>Invitación de boda digital en un solo archivo: cuenta regresiva, mapas, confirmación por código y galería.</span>
+            <em>HTML · CSS · JavaScript</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/erpNeni" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>erpNeni</strong>
+            <span>ERP de ventas e inventarios en Laravel, desplegado en Kubernetes.</span>
+            <em>Laravel · Kubernetes</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/tareasOnKubernetes" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>tareasOnKubernetes</strong>
+            <span>API REST en PHP con MariaDB, contenerizada y desplegada en Kubernetes.</span>
+            <em>PHP · Docker</em></a></li>
+          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/Airflow" rel="noopener" target="_blank">
+            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>Airflow</strong>
+            <span>Pipeline ETL de tipos de cambio en Python orquestado con Apache Airflow.</span>
+            <em>Python · Airflow</em></a></li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="vitrina revelar" data-pestanas>
-          <div class="vitrina__lista" role="tablist" aria-label="Productos" aria-orientation="vertical">
-            <button role="tab" id="tab-erp" aria-controls="panel-erp" aria-selected="true"><strong>Alkes ERP</strong><span>Gestión empresarial y CFDI</span></button>
-            <button role="tab" id="tab-smartpend" aria-controls="panel-smartpend" aria-selected="false" tabindex="-1"><strong>SmartPend</strong><span>Pendientes con IA</span></button>
-            <button role="tab" id="tab-mantis" aria-controls="panel-mantis" aria-selected="false" tabindex="-1"><strong>Mantis</strong><span>Mantenimientos</span></button>
-            <button role="tab" id="tab-geocheck" aria-controls="panel-geocheck" aria-selected="false" tabindex="-1"><strong>GeoCheck</strong><span>Control de asistencia</span></button>
-            <button role="tab" id="tab-syspower" aria-controls="panel-syspower" aria-selected="false" tabindex="-1"><strong>SysPower</strong><span>IoT y relevadores</span></button>
-          </div>
-
-          <!-- Alkes ERP -->
-          <div class="vitrina__panel" role="tabpanel" id="panel-erp" aria-labelledby="tab-erp">
-            <div class="maqueta" aria-hidden="true">
-              <div class="maqueta__barra"><span></span><span></span><span></span><em>erp.alkes.mx</em></div>
-              <div class="factura">
-                <div class="factura__cabeza"><strong>Factura A-1042</strong><span class="etiqueta etiqueta--verde">Timbrada</span></div>
-                <div class="factura__fila"><span>Servicio de mantenimiento</span><span>$9,800.00</span></div>
-                <div class="factura__fila"><span>Refacciones</span><span>$2,680.00</span></div>
-                <div class="factura__fila"><span>IVA 16&nbsp;%</span><span>$1,996.80</span></div>
-                <div class="factura__total"><span>Total</span><strong>$14,476.80</strong></div>
-                <p class="factura__uuid">UUID 4F2C…A91E · CFDI</p>
-              </div>
-            </div>
-            <div class="vitrina__texto">
-              <h3>Alkes ERP</h3>
-              <p>ERP para pymes mexicanas: ventas, compras, almacén y punto de venta, con 153 reportes en 11 áreas operativas.</p>
-              <p class="tecnico"><i class="ph ph-cpu" aria-hidden="true"></i>CFDI con timbrado y cancelación vía el PAC Finkok, y recepción de XML de proveedores.</p>
-              <a class="boton boton--contorno" href="https://erp.alkes.mx" rel="noopener" target="_blank">Conocer Alkes ERP<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-
-          <!-- SmartPend -->
-          <div class="vitrina__panel" role="tabpanel" id="panel-smartpend" aria-labelledby="tab-smartpend" hidden>
-            <div class="maqueta" aria-hidden="true">
-              <div class="maqueta__barra"><span></span><span></span><span></span><em>smartpend.alkes.mx</em></div>
-              <div class="voz">
-                <div class="voz__onda"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <p class="voz__frase">“Mañana revisar el servidor del cliente y mandar la cotización”</p>
-                <ul class="voz__tareas">
-                  <li><span class="casilla"></span>Revisar servidor del cliente<em>Soporte</em></li>
-                  <li><span class="casilla"></span>Enviar cotización<em>Ventas</em></li>
-                </ul>
-              </div>
-            </div>
-            <div class="vitrina__texto">
-              <h3>SmartPend</h3>
-              <p>Gestión de pendientes para equipos. Dictas una nota de voz y se convierte en tareas clasificadas.</p>
-              <p class="tecnico"><i class="ph ph-cpu" aria-hidden="true"></i>Whisper transcribe y un modelo GPT responde en JSON, con un cupo mensual de IA por usuario.</p>
-              <a class="boton boton--contorno" href="https://smartpend.alkes.mx" rel="noopener" target="_blank">Conocer SmartPend<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-
-          <!-- Mantis -->
-          <div class="vitrina__panel" role="tabpanel" id="panel-mantis" aria-labelledby="tab-mantis" hidden>
-            <div class="maqueta" aria-hidden="true">
-              <div class="maqueta__barra"><span></span><span></span><span></span><em>mantis.alkes.mx</em></div>
-              <div class="activo">
-                <div class="qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="activo__datos">
-                  <strong>Compresor 03</strong>
-                  <ul class="lista-check">
-                    <li class="hecho">Revisión de presión</li>
-                    <li class="hecho">Cambio de filtro</li>
-                    <li>Evidencia fotográfica</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="vitrina__texto">
-              <h3>Mantis</h3>
-              <p>Gestión de mantenimientos para cualquier activo, pensada para el celular del técnico en campo.</p>
-              <p class="tecnico"><i class="ph ph-cpu" aria-hidden="true"></i>QR por activo, checklists configurables por empresa y reporte PDF de cada servicio.</p>
-              <a class="boton boton--contorno" href="https://mantis.alkes.mx" rel="noopener" target="_blank">Conocer Mantis<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-
-          <!-- GeoCheck -->
-          <div class="vitrina__panel" role="tabpanel" id="panel-geocheck" aria-labelledby="tab-geocheck" hidden>
-            <div class="maqueta" aria-hidden="true">
-              <div class="maqueta__barra"><span></span><span></span><span></span><em>geocheck.alkes.mx</em></div>
-              <div class="mapa">
-                <span class="mapa__zona"></span>
-                <span class="mapa__pin"><i class="ph ph-map-pin" aria-hidden="true"></i></span>
-                <div class="mapa__registro"><strong>Entrada registrada</strong><span>08:57 · dentro de la zona</span></div>
-              </div>
-            </div>
-            <div class="vitrina__texto">
-              <h3>GeoCheck</h3>
-              <p>Control de asistencia para equipos en oficina o en campo.</p>
-              <p class="tecnico"><i class="ph ph-cpu" aria-hidden="true"></i>Registro con geolocalización y fotografía.</p>
-              <a class="boton boton--contorno" href="https://geocheck.alkes.mx" rel="noopener" target="_blank">Conocer GeoCheck<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-
-          <!-- SysPower -->
-          <div class="vitrina__panel" role="tabpanel" id="panel-syspower" aria-labelledby="tab-syspower" hidden>
-            <div class="maqueta" aria-hidden="true">
-              <div class="maqueta__barra"><span></span><span></span><span></span><em>syspower.alkes.mx</em></div>
-              <div class="relevadores">
-                <div class="relevador encendido"><span>Puerto 1</span><i></i></div>
-                <div class="relevador"><span>Puerto 2</span><i></i></div>
-                <div class="relevador encendido"><span>Puerto 3</span><i></i></div>
-                <div class="relevador"><span>Puerto 4</span><i></i></div>
-                <p class="relevadores__estado"><span class="disponible__punto"></span>ESP32 en línea · Ethernet</p>
-              </div>
-            </div>
-            <div class="vitrina__texto">
-              <h3>SysPower</h3>
-              <p>Control remoto de equipos eléctricos por relevadores, desde cualquier lugar.</p>
-              <p class="tecnico"><i class="ph ph-cpu" aria-hidden="true"></i>Firmware propio para ESP32 con respaldo de Ethernet a WiFi, latido por HTTPS y actualizaciones OTA.</p>
-              <a class="boton boton--contorno" href="https://syspower.alkes.mx" rel="noopener" target="_blank">Conocer SysPower<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
+    <!-- ============================== ALKES ============================== -->
+    <section class="seccion seccion--clara" id="alkes" aria-labelledby="titulo-alkes">
+      <div class="ancho fundador revelar">
+        <div class="encabezado">
+          <h2 id="titulo-alkes">Fundador de Alkes</h2>
+          <p>Alkes hace software para empresas mexicanas: un ERP con facturación CFDI, pendientes por voz con IA, mantenimientos, control de asistencia y control remoto de equipos. Su código es privado y lo muestro con gusto en una entrevista técnica.</p>
         </div>
+        <a class="boton boton--rey" href="https://alkes.mx" rel="noopener" target="_blank">Ir a alkes.mx<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
       </div>
     </section>
 
@@ -1404,7 +1417,7 @@
     </section>
 
     <!-- ============================== STACK ============================== -->
-    <section class="seccion seccion--clara" id="stack" aria-labelledby="titulo-stack">
+    <section class="seccion" id="stack" aria-labelledby="titulo-stack">
       <div class="ancho">
         <div class="encabezado revelar">
           <h2 id="titulo-stack">Stack</h2>
@@ -1437,62 +1450,6 @@
           <li data-area="seguridad">Nessus</li><li data-area="seguridad">Firewalls</li><li data-area="seguridad">EDR</li><li data-area="seguridad">ZeroTier</li>
           <li data-area="redes">MikroTik</li><li data-area="redes">VLANs</li><li data-area="redes">CCTV</li>
           <li data-area="redes">Telefonía IP</li><li data-area="redes">Fibra óptica</li><li data-area="redes">ESP32</li><li data-area="redes">C++ / Arduino</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============================== CÓDIGO ABIERTO ============================== -->
-    <section class="seccion" id="codigo" aria-labelledby="titulo-codigo">
-      <div class="ancho">
-        <div class="encabezado revelar">
-          <h2 id="titulo-codigo">Código abierto</h2>
-          <p>El código de mis sistemas es privado y lo muestro con gusto en una entrevista técnica. Lo que sí puedes revisar ahora mismo son las páginas públicas de cada producto y estos proyectos.</p>
-        </div>
-        <ul class="repos">
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/crowdsec-coolify-skill" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>crowdsec-coolify-skill</strong>
-            <span>Skill abierta de Claude Code que instala CrowdSec en servidores Coolify con Traefik: bloqueo en proxy y firewall, listas públicas de IPs y verificación por fases.</span>
-            <em>Bash · Docker · Traefik</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/herramientas-web" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>herramientas-web</strong>
-            <span>Validador de CFDI contra XSD en PHP, y generadores de QR, contraseñas y gradientes.</span>
-            <em>PHP · JavaScript</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/erpNeni" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>erpNeni</strong>
-            <span>ERP de ventas e inventarios en Laravel, desplegado en Kubernetes.</span>
-            <em>Laravel · Kubernetes</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/tareasOnKubernetes" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>tareasOnKubernetes</strong>
-            <span>API REST en PHP con MariaDB, contenerizada y desplegada en Kubernetes.</span>
-            <em>PHP · Docker</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/Airflow" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>Airflow</strong>
-            <span>Pipeline ETL de tipos de cambio en Python orquestado con Apache Airflow.</span>
-            <em>Python · Airflow</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/smartpend_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>smartpend_landing_page</strong>
-            <span>Página pública de SmartPend, sistema de pendientes y proyectos con folio, historial y formularios públicos.</span>
-            <em>PHP · HTML · CSS</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/mantis_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>mantis_landing_page</strong>
-            <span>Página pública de Mantis, software de mantenimiento preventivo y correctivo con checklist y evidencias.</span>
-            <em>PHP · HTML · CSS</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/geocheck_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>geocheck_landing_page</strong>
-            <span>Página pública de GeoCheck, control de asistencia por ubicación con NIP, geocerca y foto.</span>
-            <em>PHP · HTML · CSS</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/syspower_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>syspower_landing_page</strong>
-            <span>Página pública de SysPower, reinicio físico remoto de equipos críticos desde el navegador.</span>
-            <em>PHP · HTML · CSS</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/erp_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>erp_landing_page</strong>
-            <span>Página pública de Alkes ERP, gestión empresarial con facturación CFDI.</span>
-            <em>PHP · HTML · CSS</em></a></li>
-          <li class="revelar"><a href="https://github.com/GustavoQuinteroC/alkes_landing_page" rel="noopener" target="_blank">
-            <i class="ph ph-github-logo" aria-hidden="true"></i><strong>alkes_landing_page</strong>
-            <span>Sitio de Alkes, software y soluciones TI, hecho a mano en HTML y CSS.</span>
-            <em>HTML · CSS · JavaScript</em></a></li>
         </ul>
       </div>
     </section>
