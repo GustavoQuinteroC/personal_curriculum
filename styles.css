@@ -266,12 +266,26 @@ button { font: inherit; color: inherit; }
 
 /* Código abierto */
 .repos { list-style: none; margin-top: 56px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-.repos a { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; height: 100%; padding: 26px; border-radius: var(--radio); background: var(--superficie); border: 1px solid var(--linea); text-decoration: none; transition: transform .45s var(--salida), box-shadow .45s var(--salida), border-color .3s; }
-.repos a:hover { transform: translateY(-4px); border-color: rgba(35, 80, 255, .4); box-shadow: 0 26px 50px -34px rgba(35, 80, 255, .7); }
-.repos .ph { grid-row: span 3; font-size: 1.8rem; color: var(--rey); }
-.repos strong { font-size: 1.15rem; }
-.repos span { color: var(--tinta-2); }
-.repos em { font-style: normal; font-family: var(--fuente-mono); font-size: .8rem; color: var(--rey); }
+.repo { display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: var(--radio); background: var(--superficie); border: 1px solid var(--linea); transition: transform .45s var(--salida), box-shadow .45s var(--salida), border-color .3s; }
+.repo:hover { transform: translateY(-4px); border-color: rgba(35, 80, 255, .4); box-shadow: 0 26px 50px -34px rgba(35, 80, 255, .7); }
+/* La tarjeta también se anima al aparecer (.revelar): se suman ambas transiciones y el hover gana. */
+.js .repos .repo.revelar { transition: opacity .9s var(--salida), transform .45s var(--salida), box-shadow .45s var(--salida), border-color .3s; }
+.js .repos .repo.revelar.visible:hover { transform: translateY(-4px); }
+.repo--destacado { border-color: rgba(35, 80, 255, .45); background: linear-gradient(180deg, var(--rey-suave), var(--superficie) 55%); }
+.repo__cabeza { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.repo strong { font-size: 1.15rem; overflow-wrap: anywhere; }
+.repo__estrella { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px; background: var(--noche); color: var(--hielo); font-size: .78rem; font-weight: 600; }
+.repo__estrella .ph-fill { color: #ffc23d; font-size: 1rem; }
+.repo p { color: var(--tinta-2); }
+.repo em { font-style: normal; font-family: var(--fuente-mono); font-size: .8rem; color: var(--rey); }
+.repo__acciones { margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+.repo__accion { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--linea); color: var(--tinta); font-weight: 600; font-size: .9rem; text-decoration: none; transition: background-color .25s, color .25s, border-color .25s, transform .4s var(--resorte); }
+.repo__accion:hover { border-color: var(--rey); color: var(--rey); }
+.repo__accion:active { transform: scale(.96); }
+.repo__accion--demo { background: var(--rey); border-color: var(--rey); color: #fff; }
+.repo__accion--demo:hover { background: var(--rey-hover); border-color: var(--rey-hover); color: #fff; }
+.repo__accion--demo:hover .ph-arrow-up-right { transform: translate(2px, -2px); }
+.repo__accion .ph { font-size: 1.1em; transition: transform .4s var(--resorte); }
 
 /* Formación */
 .formacion { display: block; }
